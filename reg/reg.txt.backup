@@ -1,0 +1,34 @@
+MFUNC_TOP 6'h0000
+WR 000 params_start 1 1'b0
+WR 004 params_saddr_l 32 32'h0000_0000
+WR 008 params_saddr_h 32 32'h0000_0000
+WR 00c params_daddr_l 32 32'h0000_0000
+WR 010 params_daddr_l 32 32'h0000_0000
+WR 014 params_data_len 32 32'h0000_0100
+WR 018 params_wr_mode 1 1'd0
+WR 01c params_rd_mode 1 1'd0
+RO 020 params_data_done 1 1'd0
+ENDMFUNC
+MFUNC_SUB1 6'h0001
+WR 000 params_other1 1 1'b0
+WR 004 params_other2 32 32'h0000_0003
+WR 008 params_other3 32 32'h0000_0002
+WR 00c params_other4 32 32'h0000_0001
+RO 020 params_other5 1 1'd0
+ENDMFUNC
+MFUNC_SUB2 6'h0002
+WR 000 params_other6 1 1'b0
+WR 004 params_other7 32 32'h0000_0003
+WR 008 params_other8 32 32'h0000_0002
+WR 00c params_other9 32 32'h0000_0001
+RO 020 params_other10 1 1'd0
+ENDMFUNC
+MFUNC_SUB3 6'h0003
+WR 000 params_other11 1 1'b0
+WR 004 params_other12 32 32'h0000_0003
+WR 008 params_other13 32 32'h0000_0002
+WR 00c params_other14 32 32'h0000_0001
+RO 020 params_other15 1 1'd0
+ENDMFUNC
+ENDALL
+
